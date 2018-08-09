@@ -97,12 +97,10 @@
 		B99FE97B211CF5970035780D /* Hedgehog */ = {
 			isa = PBXGroup;
 			children = (
-				B99FE97C211CF5970035780D /* AppDelegate.swift */,
-				B99FE97E211CF5970035780D /* ViewController.swift */,
-				B99FE980211CF5970035780D /* Main.storyboard */,
-				B99FE983211CF5970035780D /* Assets.xcassets */,
-				B99FE985211CF5970035780D /* LaunchScreen.storyboard */,
 				B99FE988211CF5980035780D /* Info.plist */,
+				B99FE9AC211CFB910035780D /* Resources */,
+				B99FE9AB211CFB8C0035780D /* Models */,
+				B99FE9AA211CFB810035780D /* ViewControllers */,
 			);
 			path = Hedgehog;
 			sourceTree = "<group>";
@@ -123,6 +121,32 @@
 				B99FE99E211CF5980035780D /* Info.plist */,
 			);
 			path = HedgehogUITests;
+			sourceTree = "<group>";
+		};
+		B99FE9AA211CFB810035780D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B99FE97C211CF5970035780D /* AppDelegate.swift */,
+				B99FE97E211CF5970035780D /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B99FE9AB211CFB8C0035780D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B99FE9AC211CFB910035780D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B99FE983211CF5970035780D /* Assets.xcassets */,
+				B99FE980211CF5970035780D /* Main.storyboard */,
+				B99FE985211CF5970035780D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SPNB6DV4LU;
 				INFOPLIST_FILE = Hedgehog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SPNB6DV4LU;
 				INFOPLIST_FILE = Hedgehog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
