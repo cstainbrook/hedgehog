@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "download.jpg",
+      "filename" : "bananas_ts.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "download.png",
+      "filename" : "bananas-200x200.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "download-1.jpg",
+      "filename" : "banana_fruit_300x300_istock_2.jpg",
       "scale" : "3x"
     }
   ],

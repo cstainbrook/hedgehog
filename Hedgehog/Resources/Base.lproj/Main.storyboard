@@ -278,8 +278,8 @@
                         <viewLayoutGuide key="safeArea" id="MBC-SO-gUj"/>
                     </view>
                     <connections>
-                        <outlet property="totalGallonsTextField" destination="caM-AW-BZF" id="ESz-bo-cv9"/>
-                        <outlet property="totalPriceTextField" destination="pVA-Oy-x6Q" id="NuB-T6-o9p"/>
+                        <outlet property="totalGallonsTextField" destination="caM-AW-BZF" id="gQ1-gR-XV8"/>
+                        <outlet property="totalPriceTextField" destination="pVA-Oy-x6Q" id="xnR-AN-dfC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Zt-X5-1PX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -302,21 +302,51 @@
             </objects>
             <point key="canvasLocation" x="972" y="733"/>
         </scene>
-        <!--Deals-->
-        <scene sceneID="ydj-ik-i0v">
+        <!--Deals Inside-->
+        <scene sceneID="Tjd-gR-AA6">
             <objects>
-                <viewController id="FHt-Mk-sLg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pGo-uG-vcX">
+                <tableViewController id="Z1M-4I-Whj" customClass="DealsTableViewController" customModule="Hedgehog" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qlk-0R-Xdc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="06g-iC-0aL"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Deals" id="TPy-D2-3eg"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S06-3F-dOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CDV-81-78l">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CDV-81-78l" id="h2o-0E-baR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Z1M-4I-Whj" id="xn2-vC-zRu"/>
+                            <outlet property="delegate" destination="Z1M-4I-Whj" id="pVA-pU-Ytt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Deals Inside" id="c22-gd-dR5"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cU-1i-qmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="1506"/>
+            <point key="canvasLocation" x="1911" y="1502"/>
+        </scene>
+        <!--Deals-->
+        <scene sceneID="nX2-E2-IFK">
+            <objects>
+                <navigationController id="ywb-Pw-dar" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Deals" id="hGS-Sf-YuK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bbz-KU-idx">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Z1M-4I-Whj" kind="relationship" relationship="rootViewController" id="SYr-Wg-Du7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OmG-aE-Dch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="1502"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="u6V-T0-cVF">
@@ -331,7 +361,7 @@
                     <connections>
                         <segue destination="AjG-gJ-dQB" kind="relationship" relationship="viewControllers" id="dyj-rg-QSp"/>
                         <segue destination="RB8-jD-N9l" kind="relationship" relationship="viewControllers" id="h4o-gZ-H2V"/>
-                        <segue destination="FHt-Mk-sLg" kind="relationship" relationship="viewControllers" id="d9h-F0-Yq9"/>
+                        <segue destination="ywb-Pw-dar" kind="relationship" relationship="viewControllers" id="xD2-Er-B9x"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KE8-cv-4fL" userLabel="First Responder" sceneMemberID="firstResponder"/>

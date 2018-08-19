@@ -17,6 +17,8 @@
 		B99FE987211CF5970035780D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99FE985211CF5970035780D /* LaunchScreen.storyboard */; };
 		B99FE992211CF5980035780D /* HedgehogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99FE991211CF5980035780D /* HedgehogTests.swift */; };
 		B99FE99D211CF5980035780D /* HedgehogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99FE99C211CF5980035780D /* HedgehogUITests.swift */; };
+		B9DFC0B72129BEBF0082F5AE /* DealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DFC0B62129BEBF0082F5AE /* DealsTableViewController.swift */; };
+		B9DFC0B92129C9C30082F5AE /* DealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DFC0B82129C9C30082F5AE /* DealsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		B99FE998211CF5980035780D /* HedgehogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HedgehogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99FE99C211CF5980035780D /* HedgehogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HedgehogUITests.swift; sourceTree = "<group>"; };
 		B99FE99E211CF5980035780D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9DFC0B62129BEBF0082F5AE /* DealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DealsTableViewController.swift; path = Hedgehog/ViewControllers/DealsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		B9DFC0B82129C9C30082F5AE /* DealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DealsModel.swift; path = Hedgehog/Models/DealsModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 				B99FE97C211CF5970035780D /* AppDelegate.swift */,
 				B99FE97E211CF5970035780D /* LockedinStationViewController.swift */,
 				B94C498D212279DD0018DFC6 /* VerifyPurchaseViewController.swift */,
+				B9DFC0B62129BEBF0082F5AE /* DealsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 		B99FE9AB211CFB8C0035780D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B9DFC0B82129C9C30082F5AE /* DealsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -289,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DFC0B92129C9C30082F5AE /* DealsModel.swift in Sources */,
 				B99FE97F211CF5970035780D /* LockedinStationViewController.swift in Sources */,
+				B9DFC0B72129BEBF0082F5AE /* DealsTableViewController.swift in Sources */,
 				B94C498C212271000018DFC6 /* PumpingViewController.swift in Sources */,
 				B931A93A21226E230024DF6B /* ConfirmUseViewController.swift in Sources */,
 				B99FE97D211CF5970035780D /* AppDelegate.swift in Sources */,
