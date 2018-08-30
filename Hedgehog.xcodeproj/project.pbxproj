@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E8F0A09400ABAD59BAEE8E0 /* Pods_Hedgehog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EC730BA1C0A43931563C90 /* Pods_Hedgehog.framework */; };
+		A3D1B94EA096AB565375885E /* Pods_HedgehogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998D1C8BF55F9F988D581AFB /* Pods_HedgehogTests.framework */; };
+		A9DCD37B63CBD86DFC471FE8 /* Pods_HedgehogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB24E45B0D44C365F0E5693 /* Pods_HedgehogUITests.framework */; };
+		B91807B921335C7C00C06311 /* VerifyPurchaseInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91807B821335C7C00C06311 /* VerifyPurchaseInstructionsViewController.swift */; };
+		B92CDAFC21362D470028FF4B /* EmailLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92CDAFB21362D470028FF4B /* EmailLoginController.swift */; };
 		B931A93A21226E230024DF6B /* ConfirmUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B931A93921226E230024DF6B /* ConfirmUseViewController.swift */; };
+		B93A8A5221331AA600A22361 /* NearbyGasAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A8A5121331AA600A22361 /* NearbyGasAnnotation.swift */; };
+		B9426332213316D40011A9B6 /* NearbyGasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9426331213316D40011A9B6 /* NearbyGasController.swift */; };
 		B94C498C212271000018DFC6 /* PumpingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C498B212271000018DFC6 /* PumpingViewController.swift */; };
 		B94C498E212279DD0018DFC6 /* VerifyPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C498D212279DD0018DFC6 /* VerifyPurchaseViewController.swift */; };
+		B99BFB8A2134F3B900E637B5 /* LineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BFB892134F3B900E637B5 /* LineButton.swift */; };
+		B99BFB8D2134FA0000E637B5 /* MainLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BFB8C2134FA0000E637B5 /* MainLoginViewController.swift */; };
 		B99FE97D211CF5970035780D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99FE97C211CF5970035780D /* AppDelegate.swift */; };
 		B99FE97F211CF5970035780D /* LockedinStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99FE97E211CF5970035780D /* LockedinStationViewController.swift */; };
 		B99FE982211CF5970035780D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99FE980211CF5970035780D /* Main.storyboard */; };
@@ -19,6 +28,8 @@
 		B99FE99D211CF5980035780D /* HedgehogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99FE99C211CF5980035780D /* HedgehogUITests.swift */; };
 		B9DFC0B72129BEBF0082F5AE /* DealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DFC0B62129BEBF0082F5AE /* DealsTableViewController.swift */; };
 		B9DFC0B92129C9C30082F5AE /* DealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DFC0B82129C9C30082F5AE /* DealsModel.swift */; };
+		B9F3DB472136384D0056C8F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9F3DB462136384D0056C8F2 /* GoogleService-Info.plist */; };
+		B9F3DB49213638A40056C8F2 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F3DB48213638A40056C8F2 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +50,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0009C36837983CDB996F635A /* Pods-HedgehogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HedgehogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HedgehogTests/Pods-HedgehogTests.release.xcconfig"; sourceTree = "<group>"; };
+		382386921AEE3F31BA381552 /* Pods-HedgehogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HedgehogUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HedgehogUITests/Pods-HedgehogUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		38BC93AC5A83526FB89EA603 /* Pods-Hedgehog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hedgehog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hedgehog/Pods-Hedgehog.debug.xcconfig"; sourceTree = "<group>"; };
+		6219F08CC2B15D278EE47926 /* Pods-HedgehogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HedgehogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HedgehogTests/Pods-HedgehogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		92EC730BA1C0A43931563C90 /* Pods_Hedgehog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hedgehog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		998D1C8BF55F9F988D581AFB /* Pods_HedgehogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HedgehogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90AB224A450E2450A3927FE /* Pods-Hedgehog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hedgehog.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hedgehog/Pods-Hedgehog.release.xcconfig"; sourceTree = "<group>"; };
+		B91807B821335C7C00C06311 /* VerifyPurchaseInstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VerifyPurchaseInstructionsViewController.swift; path = Hedgehog/ViewControllers/VerifyPurchaseInstructionsViewController.swift; sourceTree = SOURCE_ROOT; };
+		B92CDAFB21362D470028FF4B /* EmailLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmailLoginController.swift; path = Hedgehog/ViewControllers/EmailLoginController.swift; sourceTree = SOURCE_ROOT; };
 		B931A93921226E230024DF6B /* ConfirmUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConfirmUseViewController.swift; path = Hedgehog/ViewControllers/ConfirmUseViewController.swift; sourceTree = SOURCE_ROOT; };
+		B93A8A5121331AA600A22361 /* NearbyGasAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NearbyGasAnnotation.swift; path = Hedgehog/Models/NearbyGasAnnotation.swift; sourceTree = SOURCE_ROOT; };
+		B9426331213316D40011A9B6 /* NearbyGasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NearbyGasController.swift; path = Hedgehog/ViewControllers/NearbyGasController.swift; sourceTree = SOURCE_ROOT; };
 		B94C498B212271000018DFC6 /* PumpingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PumpingViewController.swift; path = Hedgehog/ViewControllers/PumpingViewController.swift; sourceTree = SOURCE_ROOT; };
 		B94C498D212279DD0018DFC6 /* VerifyPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPurchaseViewController.swift; sourceTree = "<group>"; };
+		B99BFB892134F3B900E637B5 /* LineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineButton.swift; sourceTree = "<group>"; };
+		B99BFB8C2134FA0000E637B5 /* MainLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainLoginViewController.swift; path = Hedgehog/ViewControllers/MainLoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		B99FE979211CF5970035780D /* Hedgehog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hedgehog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99FE97C211CF5970035780D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B99FE97E211CF5970035780D /* LockedinStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedinStationViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +81,10 @@
 		B99FE99E211CF5980035780D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9DFC0B62129BEBF0082F5AE /* DealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DealsTableViewController.swift; path = Hedgehog/ViewControllers/DealsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		B9DFC0B82129C9C30082F5AE /* DealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DealsModel.swift; path = Hedgehog/Models/DealsModel.swift; sourceTree = SOURCE_ROOT; };
+		B9F3DB462136384D0056C8F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B9F3DB48213638A40056C8F2 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = Hedgehog/ViewControllers/CreateAccountViewController.swift; sourceTree = SOURCE_ROOT; };
+		EBB24E45B0D44C365F0E5693 /* Pods_HedgehogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HedgehogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F99CFCB6B6926FCFF54A2A /* Pods-HedgehogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HedgehogUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HedgehogUITests/Pods-HedgehogUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8F0A09400ABAD59BAEE8E0 /* Pods_Hedgehog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D1B94EA096AB565375885E /* Pods_HedgehogTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +108,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9DCD37B63CBD86DFC471FE8 /* Pods_HedgehogUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		452B49AC62621EC86E0D7FCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38BC93AC5A83526FB89EA603 /* Pods-Hedgehog.debug.xcconfig */,
+				A90AB224A450E2450A3927FE /* Pods-Hedgehog.release.xcconfig */,
+				6219F08CC2B15D278EE47926 /* Pods-HedgehogTests.debug.xcconfig */,
+				0009C36837983CDB996F635A /* Pods-HedgehogTests.release.xcconfig */,
+				382386921AEE3F31BA381552 /* Pods-HedgehogUITests.debug.xcconfig */,
+				F4F99CFCB6B6926FCFF54A2A /* Pods-HedgehogUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B99BFB8B2134F3CC00E637B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B99BFB892134F3B900E637B5 /* LineButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B99FE970211CF5970035780D = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +143,8 @@
 				B99FE990211CF5980035780D /* HedgehogTests */,
 				B99FE99B211CF5980035780D /* HedgehogUITests */,
 				B99FE97A211CF5970035780D /* Products */,
+				452B49AC62621EC86E0D7FCC /* Pods */,
+				FDC0917C8284792B01FE7AD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,7 +161,9 @@
 		B99FE97B211CF5970035780D /* Hedgehog */ = {
 			isa = PBXGroup;
 			children = (
+				B9F3DB462136384D0056C8F2 /* GoogleService-Info.plist */,
 				B99FE988211CF5980035780D /* Info.plist */,
+				B99BFB8B2134F3CC00E637B5 /* Views */,
 				B99FE9AC211CFB910035780D /* Resources */,
 				B99FE9AB211CFB8C0035780D /* Models */,
 				B99FE9AA211CFB810035780D /* ViewControllers */,
@@ -136,6 +192,11 @@
 		B99FE9AA211CFB810035780D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B9F3DB48213638A40056C8F2 /* CreateAccountViewController.swift */,
+				B92CDAFB21362D470028FF4B /* EmailLoginController.swift */,
+				B99BFB8C2134FA0000E637B5 /* MainLoginViewController.swift */,
+				B91807B821335C7C00C06311 /* VerifyPurchaseInstructionsViewController.swift */,
+				B9426331213316D40011A9B6 /* NearbyGasController.swift */,
 				B94C498B212271000018DFC6 /* PumpingViewController.swift */,
 				B931A93921226E230024DF6B /* ConfirmUseViewController.swift */,
 				B99FE97C211CF5970035780D /* AppDelegate.swift */,
@@ -150,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				B9DFC0B82129C9C30082F5AE /* DealsModel.swift */,
+				B93A8A5121331AA600A22361 /* NearbyGasAnnotation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,6 +226,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		FDC0917C8284792B01FE7AD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92EC730BA1C0A43931563C90 /* Pods_Hedgehog.framework */,
+				998D1C8BF55F9F988D581AFB /* Pods_HedgehogTests.framework */,
+				EBB24E45B0D44C365F0E5693 /* Pods_HedgehogUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B99FE9A1211CF5980035780D /* Build configuration list for PBXNativeTarget "Hedgehog" */;
 			buildPhases = (
+				4B62CEBC3CAEF3514BAA7E15 /* [CP] Check Pods Manifest.lock */,
 				B99FE975211CF5970035780D /* Sources */,
 				B99FE976211CF5970035780D /* Frameworks */,
 				B99FE977211CF5970035780D /* Resources */,
+				0BB57D5D4AD33C67086B7839 /* [CP] Embed Pods Frameworks */,
+				F61DB3056DA9A9C86EA667AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B99FE9A4211CF5980035780D /* Build configuration list for PBXNativeTarget "HedgehogTests" */;
 			buildPhases = (
+				4EB6F511611B4F607A09C961 /* [CP] Check Pods Manifest.lock */,
 				B99FE989211CF5980035780D /* Sources */,
 				B99FE98A211CF5980035780D /* Frameworks */,
 				B99FE98B211CF5980035780D /* Resources */,
@@ -206,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B99FE9A7211CF5980035780D /* Build configuration list for PBXNativeTarget "HedgehogUITests" */;
 			buildPhases = (
+				D3C799C20768EE14DC607C02 /* [CP] Check Pods Manifest.lock */,
 				B99FE994211CF5980035780D /* Sources */,
 				B99FE995211CF5980035780D /* Frameworks */,
 				B99FE996211CF5980035780D /* Resources */,
@@ -269,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B99FE987211CF5970035780D /* LaunchScreen.storyboard in Resources */,
+				B9F3DB472136384D0056C8F2 /* GoogleService-Info.plist in Resources */,
 				B99FE984211CF5970035780D /* Assets.xcassets in Resources */,
 				B99FE982211CF5970035780D /* Main.storyboard in Resources */,
 			);
@@ -290,18 +368,132 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BB57D5D4AD33C67086B7839 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hedgehog/Pods-Hedgehog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hedgehog/Pods-Hedgehog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B62CEBC3CAEF3514BAA7E15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hedgehog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EB6F511611B4F607A09C961 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HedgehogTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3C799C20768EE14DC607C02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HedgehogUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F61DB3056DA9A9C86EA667AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hedgehog/Pods-Hedgehog-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hedgehog/Pods-Hedgehog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B99FE975211CF5970035780D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F3DB49213638A40056C8F2 /* CreateAccountViewController.swift in Sources */,
 				B9DFC0B92129C9C30082F5AE /* DealsModel.swift in Sources */,
+				B99BFB8D2134FA0000E637B5 /* MainLoginViewController.swift in Sources */,
 				B99FE97F211CF5970035780D /* LockedinStationViewController.swift in Sources */,
 				B9DFC0B72129BEBF0082F5AE /* DealsTableViewController.swift in Sources */,
+				B93A8A5221331AA600A22361 /* NearbyGasAnnotation.swift in Sources */,
 				B94C498C212271000018DFC6 /* PumpingViewController.swift in Sources */,
+				B92CDAFC21362D470028FF4B /* EmailLoginController.swift in Sources */,
+				B91807B921335C7C00C06311 /* VerifyPurchaseInstructionsViewController.swift in Sources */,
+				B9426332213316D40011A9B6 /* NearbyGasController.swift in Sources */,
 				B931A93A21226E230024DF6B /* ConfirmUseViewController.swift in Sources */,
 				B99FE97D211CF5970035780D /* AppDelegate.swift in Sources */,
 				B94C498E212279DD0018DFC6 /* VerifyPurchaseViewController.swift in Sources */,
+				B99BFB8A2134F3B900E637B5 /* LineButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +664,7 @@
 		};
 		B99FE9A2211CF5980035780D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38BC93AC5A83526FB89EA603 /* Pods-Hedgehog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +683,7 @@
 		};
 		B99FE9A3211CF5980035780D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A90AB224A450E2450A3927FE /* Pods-Hedgehog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +702,7 @@
 		};
 		B99FE9A5211CF5980035780D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6219F08CC2B15D278EE47926 /* Pods-HedgehogTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +723,7 @@
 		};
 		B99FE9A6211CF5980035780D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0009C36837983CDB996F635A /* Pods-HedgehogTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +744,7 @@
 		};
 		B99FE9A8211CF5980035780D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 382386921AEE3F31BA381552 /* Pods-HedgehogUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +764,7 @@
 		};
 		B99FE9A9211CF5980035780D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4F99CFCB6B6926FCFF54A2A /* Pods-HedgehogUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
