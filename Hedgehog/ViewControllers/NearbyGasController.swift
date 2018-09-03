@@ -9,7 +9,7 @@
 import MapKit
 import UIKit
 
-class NearbyGasController: UIViewController {
+class NearbyGasController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var nearbyGasMapView: MKMapView!
     
@@ -21,6 +21,8 @@ class NearbyGasController: UIViewController {
     let addresses = [("Shell", "1300 W Colfax Ave, Denver, CO 80204"), ("Phillips 66", "1234 Kalamath St, Denver CO 80204"), ("Conoco", "1107 Santa Fe Dr, Denver, CO 80204"), ("Conoco", "1690 Pearl St, Denver, CO 80203"), ("Conoco", "1000 E Colfax Ave, Denver, CO 80218"), ("Diamond Shamrock", "1001 Broadway, Denver, CO 80203")]
     
     override func viewDidLoad() {
+       nearbyGasMapView.delegate = self
+        
        //center the initial location of the map.
        centerMapOnLocation(location: initialLocation, radius: regionRadius)
        
@@ -50,6 +52,29 @@ class NearbyGasController: UIViewController {
     func centerMapOnLocation(location: CLLocation, radius: CLLocationDistance) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, radius, radius)
         nearbyGasMapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    
+    //MARK: - MKMapView Delegates
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard let annotation = annotation as? NearbyGasAnnotation else {
+            return nil
+        }
+        let identifier = "gasStation"
+        var view: MKMarkerAnnotationView
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
+            dequeuedView.annotation = annotation
+            view = dequeuedView
+        } else {
+            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+        }
+        
+        //Set marker image
+        if let gasImage = UIImage(named: "Gas_Pump") {
+            let templateGasImage = gasImage.withRenderingMode(.alwaysTemplate)
+            view.glyphImage = templateGasImage
+        }
+        return view
     }
     
 }
